@@ -1,0 +1,99 @@
+/* Define your CSS styles here */
+body {
+    background-image: url("/homebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 244, 245)
+}
+
+header {
+    background-color: #020205;
+    color: #fff;
+    padding: 0.5px 0;
+}
+
+header .logo {
+    font-size: 60px;
+    font-weight: bold;
+    padding-left: 160px;
+    margin-right: -10px;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+        top: 0px; 
+        left: 0px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.hero {
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.greyarea{
+    color: #fff;
+
+    
+}
+.white
+{
+     margin-top: +50px;
+    color: #ffffff;
+}
+.cta-button {
+    background-color: #8f24f3;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: background-color 0.1s;
+}
+
+.cta-button:hover {
+    background-color: #060d5b;
+}
+
+.hero-content {
+    animation: fadeInUp 2s ease;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

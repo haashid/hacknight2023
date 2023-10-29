@@ -1,0 +1,119 @@
+/* Define your CSS styles here */
+body {
+    background: linear-gradient(45deg, #ff5f6d, #ffc371, #2a7b67, #2e4980);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Define your CSS styles here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#home-button {
+    position: fixed;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home-button a {
+    text-decoration: none; /* Remove the default underline for the link */
+    color: #fff; /* Link text color */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.text{
+    margin-left: -40px;
+    padding-right:10px; 
+    padding-top: -50px;
+    
+}
+
+.quiz-container {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    padding: 40px;
+    color: #f7e4e4;
+}
+
+.quiz-container {
+    background-color: rgba(242, 218, 218, 0.8); /* White with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Drop shadow for the container */
+}
+
+
+
+.option {
+    display: block; /* Display options one below the other */
+    margin: 10px;
+    margin-block: 30px;
+    padding: 15px 20px;
+    background-color: #06839a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Center-align the text within the option */
+    width: 100%; /* Make the option take full width of its container */
+}
+
+
+
+
+.option:hover {
+    background-color: #ec7b61;
+}
+
+
+.correct {
+    background-color: #32CD32; /* Green for correct */
+    color: white;
+}
+
+.incorrect {
+    background-color: #FF0000; /* Red for incorrect */
+    color: white;
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quiz-container, .option {
+    animation: fadeIn 2s ease;
+}
+

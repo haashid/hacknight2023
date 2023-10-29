@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>revizz.com</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+</head>
+<body>
+    <button id="home-button"><a href="home.html">Home</a></button>
+    <div class="text">
+    <h1 style="color:rgb(0, 49, 75);" ><b>GENERAL KNOWLEDGE QUIZ</b></h1></body>
+</div>
+
+<div class="quiz-container">
+       
+    <div id="question-container">
+        <h1 style="color:rgb(159, 2, 2);" id="question-text">Question goes here...</h1>
+    </div>
+    <div id="options-container">
+        <button class="option" onclick="checkAnswer(1)">Option 1</button>
+        <button class="option" onclick="checkAnswer(2)">Option 2</button>
+        <button class="option" onclick="checkAnswer(3)">Option 3</button>
+        <button class="option" onclick="checkAnswer(4)">Option 4</button>
+    </div>
+    <div style="color:rgb(2, 2, 2);"id="timer">60</div>
+    <div id="message"></div>
+    <p id="result"></p>
+    <button id="next-button" onclick="nextQuestion()">Next</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

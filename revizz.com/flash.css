@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stylish animated background */
+body {
+    background: linear-gradient(135deg, #3494E6, #EC6EAD);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#home-button {
+    position: fixed;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#home-button a {
+    text-decoration: none; /* Remove the default underline for the link */
+    color: #fff; /* Link text color */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Flashcard styles */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flashcard {
+    width: 200px;
+    min-height: 150px;
+    max-height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    perspective: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+/* Add-button styles */
+.add-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #3494E6;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-button:hover {
+    background: #EC6EAD;
+}
+.add-buttons {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #007bff; /* Background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-buttons:hover {
+    background: #0056b3; /* Hover background color */
+    transform: scale(1.1); /* Hover effect: slight scaling */
+}
+
+.add-buttons:focus {
+    outline: none; /* Remove focus outline */
+}
